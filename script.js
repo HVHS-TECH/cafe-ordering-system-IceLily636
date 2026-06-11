@@ -8,3 +8,4 @@ const menuItems = [
 ];
 
 function displayMenu() {
+OUTPUT.innerHTML= "<H1>Our Menu</H1>"    
