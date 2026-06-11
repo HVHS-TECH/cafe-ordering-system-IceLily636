@@ -1,5 +1,5 @@
 console.log("Hello, World!");
-const get
+const document.getElementById("JavaScriptOutput");
 const menuItems = [
     { name: "Sakura Mochi", price: 5.00 },
     { name: "Chocolate", price: 20.00 },
