@@ -1,4 +1,5 @@
 console.log("Hello, World!");
+const
 const menuItems = [
     { name: "Sakura Mochi", price: 5.00 },
     { name: "Chocolate", price: 20.00 },
