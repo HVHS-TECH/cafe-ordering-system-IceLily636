@@ -1,9 +1,9 @@
 console.log("Hello, World!");
 const menuItems = [
-    { name: "Espresso", price: 3.00 },
-    { name: "Cappuccino", price: 4.00 },
-    { name: "Latte", price: 4.50 },
-    { name: "Mocha", price: 5.00 }
+    { name: "Sakura Mochi", price: 5.00 },
+    { name: "Chocolate", price: 4.00 },
+    { name: "Universal Peace", price: 7.00 },
+    { name: "Rainbow Macaroons", price: 15.00 }
 ];
 
 function displayMenu() {
