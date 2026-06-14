@@ -10,7 +10,7 @@ console.log("Hello");
 
 
 for( i=0; i<menuItems.length; i++) {
-OUTPUT.innerHTML += "<img src="+menuItems[0].image+">"
+OUTPUT.innerHTML += "<img src="Images/cafeitem1.png">";
 OUTPUT.innerHTML += "<p>"+menuItems[i].name+ " - $" + menuItems[i].price + "</p>";
 
 }
