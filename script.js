@@ -8,5 +8,8 @@ const menuItems = [
 ];
 console.log("Hello");
 
-function displayMenu() {
-OUTPUT.innerHTML= "<H1>Our Menu</H1>"  }
+
+for( i=0; i<menuItems.length; i++) {
+OUTPUT.innerHTML += "<br>Items:" +menuItems [i]+ "<br>";
+
+}
