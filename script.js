@@ -10,6 +10,6 @@ console.log("Hello");
 
 
 for( i=0; i<menuItems.length; i++) {
-OUTPUT.innerHTML += "<br>Items:" +menuItems [i]+ "<br>";
+OUTPUT.innerHTML += "<br>Items:" +menuItems[i].name+ " - $" + menuItems[i].price + "<br>";
 
 }
