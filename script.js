@@ -1,7 +1,7 @@
 console.log("Hello, World!");
 const OUTPUT = document.getElementById("JavaScriptOutput");
 const menuItems = [
-    { name: "Sakura Mochi", price: 5.00 },
+    { name: "Sakura Mochi", price: 5.00  image: "cafe item 1.pn" },
     { name: "Chocolate", price: 20.00 },
     { name: "Universal Peace", price: 7.00 },
     { name: "Rainbow Macaroons", price: 15.00 }
