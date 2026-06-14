@@ -6,6 +6,7 @@ const menuItems = [
     { name: "Universal Peace", price: 7.00 },
     { name: "Rainbow Macaroons", price: 15.00 }
 ];
+console.log("Hello");
 
 function displayMenu() {
 OUTPUT.innerHTML= "<H1>Our Menu</H1>"  }
