@@ -8,6 +8,12 @@ const menuItems = [
 ];
 console.log("Hello");
 
+const NAME_FIELD = document.getElementById("nameField");
+USER.name = NAME_FIELD.value;
+if(USER.name.length < 3){
+OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
+}
+else{
 
 for( i=0; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[0].image+" width=400>";
