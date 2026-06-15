@@ -13,7 +13,7 @@ USER.name = NAME_FIELD.value;
 if(USER.name.length < 3){
 OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
 }
-else{
+else{}
 
 for( i=0; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[0].image+" width=400>";
