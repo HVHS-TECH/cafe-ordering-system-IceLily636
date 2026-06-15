@@ -15,7 +15,7 @@ if(USER.name.length < 3){
 OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
 }
 else{
-    OUTPUT.innerHTML += "<H1>Welcome to Teyvat Treasures" +User.name+ "</H1>"
+    OUTPUT.innerHTML += "<h1>Welcome to Teyvat Treasures " +USER.name+ "</h1>"
 }
 }
 for( i=0; i<menuItems.length; i++) {
