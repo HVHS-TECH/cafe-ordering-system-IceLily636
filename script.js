@@ -1,4 +1,5 @@
 console.log("Hello, World!");
+const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 const menuItems = [
     { name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
@@ -7,14 +8,16 @@ const menuItems = [
     { name: "Rainbow Macaroons", price: 15.00 }
 ];
 console.log("Hello");
-
+function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 USER.name = NAME_FIELD.value;
 if(USER.name.length < 3){
 OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
 }
-else{}
-
+else{
+    OUTPUT.innerHTML += "<H1>Welcome to Teyvat Treasures" +User.name+ "</H1>"
+}
+}
 for( i=0; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[0].image+" width=400>";
 OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
