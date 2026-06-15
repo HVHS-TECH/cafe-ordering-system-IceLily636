@@ -20,6 +20,7 @@ else{
 }
 const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
+OUTPUT.innerHTML += "<h2>You have " +USER.money+ "dollars</h2>"
 
 for( i=0; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[0].image+" width=400>";
