@@ -17,11 +17,11 @@ OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
 else{
     OUTPUT.innerHTML += "<h1>Welcome to Teyvat Treasures " +USER.name+ "</h1>"
 }
-}
+
 const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
-OUTPUT.innerHTML += "<h2>You have " +USER.money+ "dollars</h2>"
-
+OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
+}
 for( i=0; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[0].image+" width=400>";
 OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
