@@ -23,8 +23,8 @@ USER.money = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
 
-function getFormInput(){
-const ORDER_FIELD = document.getElementById("orderFeild")
+function getItemFormInput(){
+const ORDER_FIELD = document.getElementById("orderField")
 order = Number (ORDER_FIELD.value)
 OUTPUT.innerHTML+="<p>"+menuItems[order].name+"</p>";
 }
