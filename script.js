@@ -3,9 +3,9 @@ const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 const menuItems = [
     { name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
-    { name: "Chocolate", price: 20.00 },
-    { name: "Universal Peace", price: 7.00 },
-    { name: "Rainbow Macaroons", price: 15.00 }
+    { name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
+    { name: "Universal Peace", price: 7.00,image: "Images/cafeitem2.png" },
+    { name: "Rainbow Macaroons", price: 15.00,image: "Images/cafeitem2.png" }
 ];
 console.log("Hello");
 function getFormInput(){
@@ -23,7 +23,7 @@ USER.money = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
 for( i=0; i<menuItems.length; i++) {
-OUTPUT.innerHTML += "<img src="+menuItems[0].image+" width=400>";
+OUTPUT.innerHTML += "<img src="+menuItems[i].image+" width=400>";
 OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
 
 }
