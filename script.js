@@ -37,7 +37,14 @@ order = Number (ORDER_FIELD.value)
 console.log("Heliugbuilo");
 OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";}
 //receipt 
-
+if(USER.money >= menuItems[order].price ){
+    OUTPUT.innerHTML +="<p>A chocolate bar is 4 dollars, you can afford it</p>"
+    change = calculateChange(USER.money, menuItems[order].price)
+    OUTPUT.innerHTML +="<p>Your change is" +_change+ "Dollars</p>"
+}
+else{
+    OUTPUT.innerHTML +="<p>A chocolate bar is 4 dollars ,you cant afford it.</p>"
+}
 
 
 // show item image
