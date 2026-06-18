@@ -1,8 +1,10 @@
 console.log("Hello, World!");
 let change
 let order
-function calculateChange( _price){}
-return change
+function calculateChange(_money, _price){
+let _change = _money - _price
+return _change;
+}
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 //menu items
