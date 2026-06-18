@@ -33,7 +33,7 @@ OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 // get item details
 function getItemFormInput(){
 const ORDER_FIELD = document.getElementById("orderField")
-order = Number (ORDER_FIELD.value)
+order = Number(ORDER_FIELD.value)
 console.log("Heliugbuilo");
 OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";}
 //receipt 
