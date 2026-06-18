@@ -9,10 +9,10 @@ const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 //menu items
 const menuItems = [
-    { name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
-    { name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
-    { name: "Universal Peace", price: 7.00,image: "Images/cafeitem2.png" },
-    { name: "Rainbow Macaroons", price: 15.00,image: "Images/cafeitem2.png" }
+    { Item:1, name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
+    { Item:2,name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
+    { Item:3,name: "Universal Peace", price: 7.00,image: "Images/cafeitem2.png" },
+    { Item:4,name: "Rainbow Macaroons", price: 15.00,image: "Images/cafeitem2.png" }
 ];
 console.log("Hello");
 //get user data and welcome
@@ -38,7 +38,7 @@ console.log("Heliugbuilo");
 OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
 //receipt 
 if(USER.money >= menuItems[order].price){
-    OUTPUT.innerHTML +="<p>You have ordered" + + "</p>"
+    OUTPUT.innerHTML +="<p>You have recived " +menuItems[order].name+ "</p>"
     change = calculateChange(USER.money, menuItems[order].price)
     OUTPUT.innerHTML +="<p>Your change is " +change+ "Dollars</p>"
 }
