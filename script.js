@@ -32,7 +32,7 @@ OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 function getItemFormInput(){
 const ORDER_FIELD = document.getElementById("orderField")
 order = Number (ORDER_FIELD.value)
-OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
+OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";}
 //receipt 
 if(USER.money >= menuItems[order].price){
     OUTPUT.innerHTML +="<p>A chocolate bar is 4 dollars, you can afford it</p>"
