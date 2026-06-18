@@ -1,5 +1,6 @@
 console.log("Hello, World!");
 let change
+let order
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 //menu items
@@ -34,7 +35,7 @@ OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
 if(USER.money >= menuItems[order].price){
     OUTPUT.innerHTML +="<p>A chocolate bar is 4 dollars, you can afford it</p>"
     change = calculateChange(USER.money - menuItems[order].price)
-    OUTPUT.innerHTML +="<p>Your change is" +_change+ "Dollars</p>"
+    OUTPUT.innerHTML +="<p>Your change is" +change+ "Dollars</p>"
 }
 else{
     OUTPUT.innerHTML +="<p>A" +menuItems[order].name+ "is" +menuItems[order].price+ ",you cant afford it.</p>"
