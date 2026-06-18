@@ -1,7 +1,7 @@
 console.log("Hello, World!");
 let change
 let order
-function calculateChange(USER.money, _price)
+function calculateChange( _price){}
 return change
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
