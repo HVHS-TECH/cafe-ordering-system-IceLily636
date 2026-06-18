@@ -49,7 +49,7 @@ else{
 }
 
 // show item image
-for( i=0; i<menuItems.length; i++) {
+for( i=1; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[i].image+" width=400>";
 OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
 
