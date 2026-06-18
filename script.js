@@ -29,7 +29,13 @@ function getItemFormInput(){
 const ORDER_FIELD = document.getElementById("orderField")
 order = Number (ORDER_FIELD.value)
 OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
-if 
+if(USER.money >= menuItems[order].price){
+    OUTPUT.innerHTML +="<p>A chocolate bar is 4 dollars, you can afford it</p>"
+    _change = calculateChange(USER.money - menuItems[order].price)
+    OUTPUT.innerHTML +="<p>Your change is" +_change+ "Dollars</p>"
+}
+else{
+    OUTPUT.innerHTML +="<p>A" +menuItems[order].name+ "is" +menuItems[order].price+ ",you cant afford it.</p>"
 }
 
 
