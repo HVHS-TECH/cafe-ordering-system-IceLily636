@@ -1,6 +1,7 @@
 console.log("Hello, World!");
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
+//menu items
 const menuItems = [
     { name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
     { name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
@@ -8,6 +9,7 @@ const menuItems = [
     { name: "Rainbow Macaroons", price: 15.00,image: "Images/cafeitem2.png" }
 ];
 console.log("Hello");
+//get user data and welcome
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 USER.name = NAME_FIELD.value;
@@ -17,20 +19,21 @@ OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
 else{
     OUTPUT.innerHTML += "<h1>Welcome to Teyvat Treasures " +USER.name+ "</h1>"
 }
-
+//show money amount
 const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
-
+// get item details
 function getItemFormInput(){
 const ORDER_FIELD = document.getElementById("orderField")
 order = Number (ORDER_FIELD.value)
-OUTPUT.innerHTML+="<p>"+menuItems[order].name+"</p>";
+OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
+if 
 }
 
 
-
+// show item image
 for( i=0; i<menuItems.length; i++) {
 OUTPUT.innerHTML += "<img src="+menuItems[i].image+" width=400>";
 OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
