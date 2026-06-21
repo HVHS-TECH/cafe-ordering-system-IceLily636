@@ -34,6 +34,12 @@ const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
+//add to cart
+function getCartFormInput(){
+const CART_FIELD = document.getElementById("listField");
+item = CART_FIELD.value;
+OUTPUT.innerHTML ="<p>you have added" +item+ "to your list<p>"
+listArray.push(item)
 // get item details
 function getItemFormInput(){
 const ORDER_FIELD = document.getElementById("orderField")
@@ -55,6 +61,11 @@ else{
     OUTPUT.innerHTML +="<p>you cant afford it.</p>"
 }
 }
+
+
+
+
+
 
 // show item image
 for( i=1; i<menuItems.length; i++) {
