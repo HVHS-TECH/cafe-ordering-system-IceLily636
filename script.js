@@ -45,7 +45,6 @@ OUTPUT.innerHTML +="<p>YOU OWE "+menuItems[order].price+" TO THE COMPANY</p>";
 else if(USER.money >= menuItems[order].price){
     console.log(order+"v2")
     OUTPUT.innerHTML +="<p>You have recived " +menuItems[order].name+ "</p>"
-    console.log(order+"v3")
     change = calculateChange(USER.money, menuItems[order].price)
     OUTPUT.innerHTML +="<p>Your change is " +change+ "Dollars</p>"
 }
