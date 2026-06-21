@@ -8,7 +8,7 @@ return _change;
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 
-const cartItems= []
+let cartItems= [];
 
 //menu items
 const menuItems = [
