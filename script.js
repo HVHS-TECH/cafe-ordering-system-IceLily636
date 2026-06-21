@@ -42,13 +42,13 @@ if(order=0){
 OUTPUT.innerHTML +="<p>YOU OWE "+menuItems[order].price+" TO THE COMPANY</p>";
 }
 
-if(USER.money >= menuItems[order].price){
+else if(USER.money >= menuItems[order].price){
     OUTPUT.innerHTML +="<p>You have recived " +menuItems[order].name+ "</p>"
     change = calculateChange(USER.money, menuItems[order].price)
     OUTPUT.innerHTML +="<p>Your change is " +change+ "Dollars</p>"
 }
 else{
-    OUTPUT.innerHTML +="<p>A chocolate bar is 4 dollars ,you cant afford it.</p>"
+    OUTPUT.innerHTML +="<p>you cant afford it.</p>"
 }
 }
 
