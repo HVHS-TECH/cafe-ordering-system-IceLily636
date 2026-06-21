@@ -9,7 +9,7 @@ const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 //menu items
 const menuItems = [
-    {  name: "Secret menu item", price:"ur soul", image: "Images/cafeitem1.png"},
+    {  name: "Secret menu item", price:"UR SOUL", image: "Images/cafeitem1.png"},
     {  name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
     {  name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
     {  name: "Universal Peace", price: 7.00,image: "Images/cafeitem2.png" },
@@ -38,6 +38,10 @@ order = Number(ORDER_FIELD.value)
 console.log("Heliugbuilo");
 OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
 //receipt 
+if(order=0){
+OUTPUT.innerHTML +="<p>YOU OWE "+menuItems[order].price+" TO THE COMPANY</p>";
+}
+
 if(USER.money >= menuItems[order].price){
     OUTPUT.innerHTML +="<p>You have recived " +menuItems[order].name+ "</p>"
     change = calculateChange(USER.money, menuItems[order].price)
