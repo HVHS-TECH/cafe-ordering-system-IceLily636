@@ -19,6 +19,7 @@ const menuItems = [
     {  name: "Rainbow Macaroons", price: 15,image: "Images/cafeitem2.png" }
 ];
 console.log("Hello");
+
 //get user data and welcome
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
