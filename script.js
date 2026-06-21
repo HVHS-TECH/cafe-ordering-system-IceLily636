@@ -7,6 +7,9 @@ return _change;
 }
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
+
+const cartItems= []
+
 //menu items
 const menuItems = [
     {  name: "Secret menu item", price:"UR SOUL", image: "Images/cafeitem1.png"},
