@@ -9,11 +9,11 @@ const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 //menu items
 const menuItems = [
-    {  name: "Secret menu item", price:9, image: "Images/cafeitem1.png"},
-    {  name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
-    {  name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
-    {  name: "Universal Peace", price: 7.00,image: "Images/cafeitem2.png" },
-    {  name: "Rainbow Macaroons", price: 15.00,image: "Images/cafeitem2.png" }
+    {  name: "Secret menu item", price:87, image: "Images/cafeitem1.png"},
+    {  name: "Sakura Mochi", price: 9, image: "Images/cafeitem1.png" },
+    {  name: "Chocolate", price: 20, image: "Images/cafeitem2.png"},
+    {  name: "Universal Peace", price: 7,image: "Images/cafeitem2.png" },
+    {  name: "Rainbow Macaroons", price: 15,image: "Images/cafeitem2.png" }
 ];
 console.log("Hello");
 //get user data and welcome
