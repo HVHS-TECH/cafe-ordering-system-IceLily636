@@ -9,7 +9,7 @@ const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
 //menu items
 const menuItems = [
-    {  name: "Secret menu item", price:"UR SOUL", image: "Images/cafeitem1.png"},
+    {  name: "Secret menu item", price:9, image: "Images/cafeitem1.png"},
     {  name: "Sakura Mochi", price: 9.00, image: "Images/cafeitem1.png" },
     {  name: "Chocolate", price: 20.00, image: "Images/cafeitem2.png"},
     {  name: "Universal Peace", price: 7.00,image: "Images/cafeitem2.png" },
@@ -38,7 +38,7 @@ order = Number(ORDER_FIELD.value)
 console.log(order)
 OUTPUT.innerHTML+="<p>You have ordered "+menuItems[order].name+"</p>";
 //receipt 
-if(order=0){
+if(order = 0){
     console.log("Heliugbuilo");
 OUTPUT.innerHTML +="<p>YOU OWE "+menuItems[order].price+" TO THE COMPANY</p>";
 }
