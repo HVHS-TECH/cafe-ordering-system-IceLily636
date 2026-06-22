@@ -64,7 +64,7 @@ else{
     OUTPUT.innerHTML +="<p>you cant afford it.</p>"
 }
 }
-
+}
 
 
 
