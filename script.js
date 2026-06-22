@@ -41,7 +41,7 @@ const CART_FIELD = document.getElementById("listField");
 menuItems[order].name = CART_FIELD.value;
 OUTPUT.innerHTML ="<p>you have added" +menuItems[order].name+ "to your list<p>"
 cartItems.push(order)
-
+console.log("buvybyby")
 
 
 }
