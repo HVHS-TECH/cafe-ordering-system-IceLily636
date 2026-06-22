@@ -42,11 +42,11 @@ order = CART_FIELD.value;
 OUTPUT.innerHTML +="<p>you have added " +menuItems[order].name+ "to your cart<p>"
 cartItems.push(order)
 console.log("buvybyby")
-
-
 }
 
-
+function placeOrder(){
+    
+}
 
 
 
