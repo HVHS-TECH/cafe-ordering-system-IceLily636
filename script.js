@@ -37,9 +37,9 @@ OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
 //add to cart
 function getCartFormInput(){
-const CART_FIELD = document.getElementById("listField");
+const CART_FIELD = document.getElementById("cartField");
 order = CART_FIELD.value;
-OUTPUT.innerHTML ="<p>you have added" +menuItems[order].name+ "to your list<p>"
+OUTPUT.innerHTML +="<p>you have added" +menuItems[order].name+ "to your list<p>"
 cartItems.push(order)
 console.log("buvybyby")
 
