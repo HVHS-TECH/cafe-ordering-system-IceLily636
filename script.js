@@ -48,8 +48,8 @@ function placeOrder(){
     OUTPUT.innerHTML= "<h1>Your recipt</h1>"
 for( i=0; i<cartItems.length; i++) {
 
-OUTPUT.innerHTML += "<p>you have ordered" +menuItems[i].name+ "</p>"
-OUTPUT.innerHTML+= "<p>Your change is "+USER.money-menuItems[i].price +"</p>"
+OUTPUT.innerHTML += "<p>you have ordered" +menuItems[cartItems[i]].name+ "</p>"
+OUTPUT.innerHTML+= "<p>Your change is "+USER.money-menuItems[cartItems[i]].price +"</p>"
 }
 }
 
