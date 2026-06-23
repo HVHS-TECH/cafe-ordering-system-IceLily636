@@ -49,8 +49,9 @@ function placeOrder(){
 for( i=0; i<cartItems.length; i++) {
 
 OUTPUT.innerHTML += "<p>you have ordered" +menuItems[cartItems[i]].name+ ". This costs "+ menuItems[cartItems[i]].price +"</p>"
+USER.money = USER.money - menuItems[cartItems[i]].price
 }
-OUTPUT.innerHTML += "<p>Your change is " ++ "</p>"
+OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
 }
 
 
