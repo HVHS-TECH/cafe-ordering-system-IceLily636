@@ -43,11 +43,14 @@ OUTPUT.innerHTML +="<p>you have added " +menuItems[order].name+ "to your cart<p>
 cartItems.push(order)
 console.log("buvybyby")
 }
-
+//checkout
 function placeOrder(){
-    
-}
+    OUTPUT.innerHTML= "<h1>Your recipt</h1>"
+for( i=1; i<cartItems.length; i++) {
 
+OUTPUT.innerHTML += "<p>you have ordered" +menuItems[i].name+ "</p>"
+}
+}
 
 
 // show item image
