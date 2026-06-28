@@ -14,8 +14,8 @@ let cartItems= [];
 const menuItems = [
     {  name: "Secret menu item", price:"UR SOUL", image: "Images/cafeitem1.png"},
     {  name: "Sakura Mochi", price: 9, image: "Images/cafeitem1.png" },
-    {  name: "Chocolate", price: 20, image: "Images/cafeItem3.png"},
-    {  name: "Universal Peace", price: 7,image: "Images/cafeitem2.png" },
+    {  name: "Chocolate", price: 20, image: "Images/cafeitem2.png"},
+    {  name: "Universal Peace", price: 7,image: "Images/cafeItem3.png" },
     {  name: "Rainbow Macaroons", price: 15,image: "Images/cafeitem2.png" }
 ];
 console.log("Hello");
@@ -47,7 +47,7 @@ console.log("buvybyby")
 function placeOrder(){
     OUTPUT.innerHTML= "<h1>Your recipt</h1>"
 for( i=0; i<cartItems.length; i++) {
-OUTPUT.innerHTML += "<p>Thank you for ordering" +USER.name+ "You have paid</p>"
+OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ "You have paid " +USER.money+ "</p>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This costs "+ menuItems[cartItems[i]].price +"</p>"
 USER.money = USER.money - menuItems[cartItems[i]].price
 }
