@@ -47,7 +47,7 @@ console.log("buvybyby")
 function placeOrder(){
     OUTPUT.innerHTML= "<h1>Your recipt</h1>"
 for( i=0; i<cartItems.length; i++) {
-
+OUTPUT.innerHTML += "<p>Thank you for ordering" +USER.name+ "You have paid</p>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This costs "+ menuItems[cartItems[i]].price +"</p>"
 USER.money = USER.money - menuItems[cartItems[i]].price
 }
