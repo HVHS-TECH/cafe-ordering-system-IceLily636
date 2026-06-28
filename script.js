@@ -16,7 +16,7 @@ const menuItems = [
     {  name: "Sakura Mochi", price: 9, image: "Images/cafeitem1.png" },
     {  name: "Chocolate", price: 20, image: "Images/cafeitem2.png"},
     {  name: "Universal Peace", price: 7,image: "Images/cafeItem3.png" },
-    {  name: "Rainbow Macaroons", price: 15,image: "Images/cafeitem2.png" }
+    {  name: "Rainbow Macaroons", price: 15,image: "Images/cafeitem4.png" }
 ];
 console.log("Hello");
 
