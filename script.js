@@ -1,4 +1,5 @@
 console.log("Hello, World!");
+//variables
 let change
 let order
 function calculateChange(_money, _price){
@@ -49,10 +50,12 @@ function placeOrder(){
 for( i=0; i<cartItems.length; i++){
     USER.money = USER.money - menuItems[cartItems[i]].price
 }
+//if user dosent have enough money
 if (USER.money < 0){
 OUTPUT.innerHTML += "<p>You cant afford this.</p>"
 }
 else{
+   //if user has enough money 
 for( i=0; i<cartItems.length; i++) {
 OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ " You have paid " +USER.money+ "</p>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This costs "+ menuItems[cartItems[i]].price +"</p>"
