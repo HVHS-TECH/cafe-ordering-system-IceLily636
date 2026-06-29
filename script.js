@@ -54,7 +54,7 @@ OUTPUT.innerHTML += "<p>You cant afford this.</p>"
 }
 else{
 for( i=0; i<cartItems.length; i++) {
-OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ "You have paid " +USER.money+ "</p>"
+OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ " You have paid " +USER.money+ "</p>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This costs "+ menuItems[cartItems[i]].price +"</p>"
 
 }
