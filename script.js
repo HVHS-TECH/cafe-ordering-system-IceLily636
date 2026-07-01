@@ -13,7 +13,7 @@ let cartItems= [];
 
 //menu items
 const menuItems = [
-    {  name: "Secret menu item", price:"UR SOUL", image: "foxygif.gif"},
+    {  name: "Secret menu item", price:"UR SOUL", image: "Images/foxygif.gif"},
     {  name: "Sakura Mochi", price: 9, image: "Images/cafeitem1.png" },
     {  name: "Chocolate", price: 20, image: "Images/cafeitem2.png"},
     {  name: "Universal Peace", price: 7,image: "Images/cafeItem3.png" },
