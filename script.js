@@ -56,11 +56,16 @@ OUTPUT.innerHTML += "<p>You cant afford this.</p>"
 }
 else{
    //if user has enough money 
-for( i=0; i<cartItems.length; i++) {
 OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ " You have paid " +USER.money+ "</p>"
-OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This costs "+ menuItems[cartItems[i]].price +"</p>"
-
+for( i=0; i<cartItems.length; i++) {
+if (cartItems[i] == 0){
+OUTPUT.innerHTML = "<<img src="+menuItems[i].image+" width=400>"
+OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". You now owe "+ menuItems[cartItems[i]].price +"</p>"
 }
+else{
+OUTPUT.innerHTML += "<p>nijhbiuj6767</p>"
+}}
+
 OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
 }
 }
