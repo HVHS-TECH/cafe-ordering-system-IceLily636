@@ -46,6 +46,10 @@ console.log("buvybyby")
 }
 //checkout
 function placeOrder(){
+if (cartItems.length<1){
+OUTPUT.innerHTML += "<p>Add Item to cart.</p>"
+}
+else{
     OUTPUT.innerHTML= "<h1>Your recipt</h1>"
 for( i=0; i<cartItems.length; i++){
     USER.money = USER.money - menuItems[cartItems[i]].price
@@ -67,7 +71,7 @@ OUTPUT.innerHTML += "<p>nijhbiuj6767</p>"
 }}
 
 OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
-}
+}}
 }
 
 // show item image
