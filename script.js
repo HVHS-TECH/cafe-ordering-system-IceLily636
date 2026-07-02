@@ -47,7 +47,7 @@ console.log("buvybyby")
 //checkout
 function placeOrder(){
 if (cartItems.length<1){
-OUTPUT.innerHTML += "<p>Add Item to cart.</p>"
+OUTPUT.innerHTML += "<p>Add a item to cart.</p>"
 }
 else{
     OUTPUT.innerHTML= "<h1>Your recipt</h1>"
