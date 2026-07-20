@@ -8,7 +8,7 @@ return _change;
 }
 const USER ={};
 const OUTPUT = document.getElementById("JavaScriptOutput");
-
+const MENU_OUTPUT = document.getElementById("menuOutput");
 let cartItems= [];
 
 //menu items
@@ -76,7 +76,7 @@ OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
 
 // show item image
 for( i=1; i<menuItems.length; i++) {
-OUTPUT.innerHTML += "<img src="+menuItems[i].image+" width=400>";
-OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
+MENU_OUTPUT.innerHTML += "<img src="+menuItems[i].image+" width=400>";
+MENU_OUTPUT.innerHTML += "<h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3>";
 
 }
