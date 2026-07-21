@@ -36,13 +36,17 @@ const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
-//add to cart
+//add to cart and desplay
 function getCartFormInput(){
 const CART_FIELD = document.getElementById("cartField");
 order = CART_FIELD.value;
 OUTPUT.innerHTML +="<p>you have added " +menuItems[order].name+ "to your cart<p>"
 cartItems.push(order)
 console.log("buvybyby")
+}
+function clearCart(){
+OUTPUT.innerHTML += "<p>you have emptied your cart</p>"
+cartItems=[];
 }
 //checkout
 function placeOrder(){
