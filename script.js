@@ -55,8 +55,9 @@ OUTPUT.innerHTML += "<p>Add a item to cart.</p>"
 }
 else{
     OUTPUT.innerHTML= "<h1>Your recipt</h1>"
+    USER.newMoney = USER.money
 for( i=0; i<cartItems.length; i++){
-    USER.money = USER.money - menuItems[cartItems[i]].price
+    USER.newMoney = USER.newMoney - menuItems[cartItems[i]].price
 }
 //if user dosent have enough money
 if (USER.money < 0){
@@ -74,7 +75,7 @@ else{
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This is "+ menuItems[cartItems[i]].price +"</p>"
 }}
 
-OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
+OUTPUT.innerHTML += "<p>Your change is " +USER.newMoney+ "</p>"
 }}
 }
 
