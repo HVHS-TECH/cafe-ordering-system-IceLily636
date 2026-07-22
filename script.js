@@ -71,7 +71,7 @@ OUTPUT.innerHTML = "<<img src="+menuItems[i].image+" width=400>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". You now owe "+ menuItems[cartItems[i]].price +"</p>"
 }
 else{
-OUTPUT.innerHTML += "<p>You dont have enough money.</p>"
+OUTPUT.innerHTML += "<p>jfsnddddd</p>"
 }}
 
 OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
