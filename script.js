@@ -65,12 +65,14 @@ OUTPUT.innerHTML += "<p>You cant afford this.</p>"
 else{
    //if user has enough money 
 OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ " You have paid " +USER.money+ "</p>"
-
 for( i=0; i<cartItems.length; i++) {
-
+if (menuItems[i] == 0){
 OUTPUT.innerHTML = "<<img src="+menuItems[i].image+" width=400>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". You now owe "+ menuItems[cartItems[i]].price +"</p>"
 }
+else{
+OUTPUT.innerHTML += "<p>jfsnddddd</p>"
+}}
 
 OUTPUT.innerHTML += "<p>Your change is " +USER.money+ "</p>"
 }}
