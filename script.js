@@ -11,7 +11,7 @@ const OUTPUT = document.getElementById("JavaScriptOutput");
 const MENU_OUTPUT = document.getElementById("menuOutput");
 let cartItems= [];
 
-//menu items
+//menu items and pictures
 const menuItems = [
     {  name: "Secret menu item", price:"UR SOUL", image: "Images/foxygif.gif"},
     {  name: "Sakura Mochi", price: 9, image: "Images/cafeitem1.png" },
@@ -21,7 +21,7 @@ const menuItems = [
 ];
 console.log("Hello");
 
-//get user data and welcome
+//get user data and welcome to shop
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 USER.name = NAME_FIELD.value;
@@ -31,12 +31,12 @@ OUTPUT.innerHTML="<p>ADD MORE LETTERS </p>"
 else{
     OUTPUT.innerHTML += "<h1>Welcome to Teyvat Treasures " +USER.name+ "</h1>"
 }
-//show money amount
+// get and show money amount
 const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
 OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
 }
-//add to cart and desplay
+//add to cart and desplay the cart
 function getCartFormInput(){
 const CART_FIELD = document.getElementById("cartField");
 order = CART_FIELD.value;
