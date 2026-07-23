@@ -64,13 +64,14 @@ if (USER.money < 0){
 OUTPUT.innerHTML += "<p>You cant afford this.</p>"
 }
 else{
-   //if user has enough money 
+   //if user has enough money and order is 0
 OUTPUT.innerHTML += "<p>Thank you for ordering " +USER.name+ " You have paid " +USER.money+ "</p>"
 for( i=0; i<cartItems.length; i++) {
 if (menuItems[i] == 0){
 OUTPUT.innerHTML = "<<img src="+menuItems[i].image+" width=400>"
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". You now owe "+ menuItems[cartItems[i]].price +"</p>"
 }
+   //if user has enough money and order is > 0
 else{
 OUTPUT.innerHTML += "<p>you have ordered " +menuItems[cartItems[i]].name+ ". This is "+ menuItems[cartItems[i]].price +"</p>"
 }}
@@ -79,7 +80,7 @@ OUTPUT.innerHTML += "<p>Your change is " +USER.newMoney+ "</p>"
 }}
 }
 
-// show item image
+// show menu item image
 for( i=1; i<menuItems.length; i++) {
 MENU_OUTPUT.innerHTML += "<div><img src="+menuItems[i].image+" width=400><h3>"+menuItems[i].name+ " - $" + menuItems[i].price + "</h3></div>";
 
