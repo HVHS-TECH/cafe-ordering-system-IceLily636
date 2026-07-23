@@ -34,8 +34,12 @@ else{
 // get and show money amount
 const MONEY_FIELD = document.getElementById("moneyField");
 USER.money = Number(MONEY_FIELD.value);
-OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
+if (!MONEY_FIELD.checkValidity()){
+OUTPUT.innerHTML += "<h2>Enter Valid Money</h2>"
 }
+else{
+OUTPUT.innerHTML += "<h2>You have " +USER.money+ " dollars</h2>"
+}}
 //add to cart and desplay the cart
 function getCartFormInput(){
 const CART_FIELD = document.getElementById("cartField");
